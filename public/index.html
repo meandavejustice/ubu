@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="tachyons.min.css" type="text/css" media="screen" />
+      <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style type="text/css" media="screen">
+        .mylist {
+        height: 400px;
+        overflow-y: scroll;
+        border: 1px solid;
+        }
+
+        a {color: #43BC83;}
+
+        .list li {list-style: none;
+        border-bottom: 1px solid;
+        padding: 5px;}
+
+        .list li:hover {
+        background: #E9E9E9;
+        }
+      </style>
+    </head>
+    <body class="wi-100">
+      <header class="bb b--light-gray pvm">
+        <div class="center mw8 phm phl-ns">
+          <h1 class="f3 book dib prm"><a class="link" href="/" title="home">ubu web player</a></h1>
+          <h2 class="f4 book orange dib"><i>a random selection of sounds from ubuweb.com</i></h2>
+        </div>
+      </header>
+      <main class="center mw8 phm phl-ns pbxl">
+        <aside class="info"></aside>
+        <button class="pas btn btn--black btn--black:hover play">play</button>
+        <button class="pas btn btn--black btn--black:hover stop">stop</button>
+
+        <button class="pas btn btn--black btn--black:hover next">next</button>
+        <button class="pas btn btn--black btn--black:hover prev">prev</button>
+        <div class="mylist"></div>
+      </main>
+        <script type="text/javascript" src="bundle.js"></script>
+    </body>
+</html>
+

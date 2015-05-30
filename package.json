@@ -1,0 +1,31 @@
+{
+  "name": "ubu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "node lib/scrape.js",
+    "play": "node bin/play.js",
+    "prep-css": "cp node_modules/tachyons/css/tachyons.min.css public/",
+    "start": "watchify -o public/bundle.js -v -d public/index.js & nodemon server.js"
+  },
+  "author": "meandave",
+  "license": "ISC",
+  "dependencies": {
+    "array-shuffle": "^1.0.0",
+    "audiosource": "^1.2.0",
+    "blessed": "^0.1.60",
+    "cheerio": "^0.19.0",
+    "hyperscript": "^1.4.6",
+    "json-globals": "^0.2.1",
+    "justaudio": "^0.2.1",
+    "level": "^1.0.0",
+    "lodash.flatten": "^3.0.2",
+    "request": "^2.55.0",
+    "routes-router": "^4.1.2",
+    "send-data": "^7.0.0",
+    "st": "^0.5.4",
+    "tachyons": "^1.2.0"
+  }
+}
