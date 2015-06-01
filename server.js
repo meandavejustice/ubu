@@ -21,7 +21,7 @@ getArtists(function(artists) {
 });
 
 var app = Router()
-var port = 8000;
+var port = 6969;
 
 var staticHandler = st({
   path: __dirname+'/public',
